@@ -384,6 +384,27 @@ Halaman edit ([id]/edit.tsx) mengambil data post yang akan diedit (fetchPost) da
 
 #line(length: 100%)
 
+## Setup
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+2. Set up the database:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm run start:dev
+   ```
+
+
+#line(length: 100%)
+
 == 4. Perbandingan Template Engine dan Client Side Rendering (CSR)
 
 Untuk situs web dinamis seperti media sosial, Client-Side Rendering (CSR) seringkali dianggap lebih unggul dibandingkan Template Engine seperti EJS. Kelebihan utama CSR terletak pada kemampuannya menciptakan pengalaman pengguna yang lebih interaktif dan responsif, karena pembaruan tampilan terjadi di sisi klien (browser) tanpa memuat ulang seluruh halaman. Sebaliknya, EJS cenderung menghasilkan halaman yang lebih statis atau kaku.
@@ -391,3 +412,4 @@ Untuk situs web dinamis seperti media sosial, Client-Side Rendering (CSR) sering
 Namun, dari segi pengembangan, CSR bisa jadi lebih kompleks. Pengembang perlu mengelola logika untuk view, model, dan controller secara terpisah di sisi klien, serta menangani pengambilan data dari API. Di sisi lain, Template Engine seringkali lebih sederhana karena view dirender di server dengan data yang sudah disiapkan, sehingga pengembang lebih fokus pada model dan controller di backend dengan fungsi view yang relatif simpel.
 
 Secara umum, untuk aplikasi modern yang mengutamakan responsivitas dan interaksi pengguna yang kaya, CSR merupakan pilihan yang lebih baik. Sementara itu, Template Engine seperti EJS tetap menjadi pilihan yang solid untuk situs web yang lebih statis, contohnya landing page, di mana interaksi pengguna tidak terlalu intensif.
+
